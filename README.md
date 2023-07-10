@@ -1,6 +1,3 @@
-Certainly! Here's the content you can include in your GitHub README.md file for the Smart Contract Assertion project:
-
-```
 # Smart Contract Assertion
 
 ## Description
@@ -68,4 +65,3 @@ If you encounter any issues or have questions about the project, please refer to
 ## License
 
 This project is licensed under the MIT License. Please see the [LICENSE.md](LICENSE.md) file for details.
-```
