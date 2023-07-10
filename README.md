@@ -24,14 +24,14 @@ Gitpod
 4. Open the terminal in Gitpod.
 5. Run the following command to compile the smart contract:
 
-    ```
-    solc --bin --abi AssertionContract.sol -o build/
-    ```
+```
+solc --bin --abi AssertionContract.sol -o build/
+```
 This will generate the bytecode and ABI for the smart contract in the build/ directory.
 
 To interact with the smart contract, you can use the solc command-line utility or any Ethereum development framework/library. For example, you can use the following command to open an interactive console with the smart contract:
 
-    solc --console --abi build/AssertionContract.abi --bin build/AssertionContract.bin --allow-paths .
+solc --console --abi build/AssertionContract.abi --bin build/AssertionContract.bin --allow-paths .
 
 This will open the console with the contract loaded, and you can call its functions and check the results.
 
@@ -41,9 +41,9 @@ Sollidity Compiler
 2. Navigate to the project directory.
 3. Compile the smart contract using the Solidity compiler:
 
-   ```
-   solc --bin --abi AssertionContract.sol -o build/
-   ```
+```
+solc --bin --abi AssertionContract.sol -o build/
+```
 
    This will generate the bytecode and ABI for the smart contract in the `build/` directory.
 
