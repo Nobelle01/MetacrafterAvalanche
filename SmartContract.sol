@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 contract SmartContract {
@@ -20,6 +21,5 @@ contract SmartContract {
 
     function getBalance(address _address) public view returns (uint) {
         revert("This function is not available"); // revert statement
-        return balances[_address];
     }
 }
