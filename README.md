@@ -35,20 +35,6 @@ solc --console --abi build/AssertionContract.abi --bin build/AssertionContract.b
 
 This will open the console with the contract loaded, and you can call its functions and check the results.
 
-Sollidity Compiler
-
-1. Open a command-line interface.
-2. Navigate to the project directory.
-3. Compile the smart contract using the Solidity compiler:
-
-```
-solc --bin --abi AssertionContract.sol -o build/
-```
-
-   This will generate the bytecode and ABI for the smart contract in the `build/` directory.
-
-4. Deploy the smart contract to an Ethereum network using a tool like Remix or Truffle. Alternatively, you can use an Ethereum development framework/library to interact with the contract directly.
-
 ## Help
 
 If you encounter any issues or have questions about the project, please refer to the following resources:
