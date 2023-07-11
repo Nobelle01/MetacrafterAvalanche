@@ -11,8 +11,6 @@ contract MyContract {
         // Using assert() to assert an invariant condition
         assert(value != _value);
 
-        // Performing some operations
-
         // Using revert() to revert the transaction with a custom message
         if (_value == 42) {
             revert("Cannot set the value to 42");
