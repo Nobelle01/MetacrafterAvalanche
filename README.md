@@ -1,44 +1,70 @@
-# Project Title
+# Smart Contract
 
-Smart Contract with require(), assert(), and revert() Statements
+This repository contains a smart contract written in Solidity that demonstrates the usage of `require()`, `assert()`, and `revert()` statements. The contract allows setting a value with certain conditions and showcases the error handling mechanisms provided by these statements.
 
-## Description
+## Contract Details
 
-This project provides a smart contract written in Solidity that demonstrates the usage of require(), assert(), and revert() statements. The smart contract allows for the transfer of tokens between addresses and includes checks to ensure the validity of the transfer. It also showcases how to handle unexpected errors and restrict access to certain functions using the revert statement.
+The smart contract, named `MyContract`, has the following features:
 
-## Getting Started
+- A public variable `value` to store an unsigned integer value.
 
-### Installing
+- The `setValue()` function allows setting the value and enforces specific conditions using `require()`, `assert()`, and `revert()`.
 
-To download the project, you can clone the repository using the following command:
-git clone https://github.com/your-username/your-repository.git
+## Requirements
 
+To interact with the smart contract, you will need the following:
 
-### Executing program
+- Remix IDE: An online Solidity IDE for contract development and testing. You can access Remix at [https://remix.ethereum.org/](https://remix.ethereum.org/).
 
-To run the smart contract using Gitpod, follow these steps:
+## Usage
 
-1. Open Gitpod: Open your browser and go to https://www.gitpod.io/.
-2. Connect to GitHub: Sign in to your GitHub account and authorize Gitpod to access your repositories.
-3. Create a New Workspace: Click on the "Gitpod" button in your repository to create a new Gitpod workspace.
-4. Wait for the Workspace to Start: Gitpod will set up your workspace and install the necessary dependencies. This may take a few moments.
-5. Open Terminal: Once the workspace is ready, you'll see the IDE. In the bottom panel, click on the "Terminal" tab to open a terminal window.
-6. Compile the Contract: In the terminal, run the following command to compile the Solidity contract:
-      solc --bin --abi SmartContract.sol
-   
-   This command will generate the bytecode and ABI (Application Binary Interface) for the contract.
-7. Deploy the Contract: Deploy the contract to a local development network or a test network like Ropsten or Rinkeby. You can use tools like Remix IDE, Truffle, or Hardhat to deploy and interact with the contract. Make sure to fund the contract address with some initial tokens for testing purposes.
-8. Test the Contract: Write test cases to verify the behavior of the contract using different scenarios. You can use a testing framework like Truffle, Hardhat, or even write custom JavaScript/TypeScript tests to interact with the deployed contract and check if the require(), assert(), and revert() statements work as expected.
+1. Open the Remix IDE in your web browser.
 
-## Help
+2. Create a new file in Remix and name it "MyContract.sol".
 
-If you encounter any issues or have any questions, you can refer to the Solidity documentation for more information. Additionally, you can seek help from the Solidity community through forums such as the Ethereum Stack Exchange or developer community channels.
+3. Copy and paste the code from `MyContract.sol` in this repository into the Remix file.
 
-## Authors
+4. Compile the contract using the appropriate Solidity compiler version.
 
-- Your Name
-- Contact: your-email@example.com
+5. Deploy the contract to a local or a connected Ethereum network.
+
+6. Once deployed, interact with the contract by calling the `setValue()` function and providing a value.
+
+7. Observe how the `require()`, `assert()`, and `revert()` statements handle different conditions and revert transactions when necessary.
+
+## Examples
+
+Here are some examples of how the contract can be used:
+
+1. Setting a value greater than zero:
+
+```
+setValue(10);
+```
+
+2. Attempting to set a value equal to zero:
+
+```
+setValue(0); // Throws a require error: "Value must be greater than zero"
+```
+
+3. Attempting to set a value equal to the current value:
+
+```
+setValue(10); // Throws an assert error: "Value should not be equal to the current value"
+```
+
+4. Attempting to set a value of 42:
+
+```
+setValue(42); // Throws a revert error: "Cannot set the value to 42"
+```
+## Contact
+
+- @Nobelle01
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.md).
+[MIT License](LICENSE)
+
+Feel free to use, modify, and distribute this code.
